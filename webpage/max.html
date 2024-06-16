@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Max Value</title>
+</head>
+<body>
+    <form>
+        Enter the values separated by comma: <input type="text" id="val" name="val">
+        <input type="button" value="Get Max" onclick="getmax()">
+    </form>
+
+    <div id="maxValue"></div>
+    <picture>
+        <source srcset="https://img.photographyblog.com/reviews/kodak_pixpro_fz201/photos/kodak_pixpro_fz201_01.jpg" media="(min-width:520px)"/>
+        <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg">
+    </picture>
+
+    <script>
+        function getmax(){
+            var val = document.getElementById("val").value;
+            var vl = val.split(',');
+            vl = vl.map(parseFloat); // Convert strings to numbers
+            var max = Math.max(...vl);
+            document.getElementById("maxValue").innerText = "Maximum value: " + max;
+        }
+    </script>
+</body>
+</html>

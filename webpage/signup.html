@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Sign Up</title>
+    <script src="jquery-3.7.1.js"></script>
+    <link rel="icon" type="image/x-icon" href="india.png">
+</head>
+<body>
+    <div class="background-image" style="background-image: url(lsbg.jpg);">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Sign Up</h2>
+            </div>
+            <form action="process_signup.jsp" onsubmit="return validateForm()">
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" name="newUsername" pattern="[^0-9]+" required>
+                <label for="newEmail">Email:</label>
+                <input type="text" id="newEmail" name="newEmail" pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,}" required>
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" name="newPassword"  required>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword"  required>
+                <div id="pstrength"></div>
+                <input type="checkbox" id="showPassword">
+                <label for="showPassword">Show Password</label>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const showPasswordCheckbox = document.getElementById('showPassword');
+        const passwordField = document.getElementById('newPassword');
+        const confirmPasswordField = document.getElementById('confirmPassword');
+        showPasswordCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                passwordField.type = 'text';
+                confirmPasswordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+                confirmPasswordField.type = 'password';
+            }
+        });
+        function validateForm() {
+            const password = document.getElementById("newPassword").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            if (password !== confirmPassword) {
+                alert("Passwords do not match");
+                return false;
+            }
+            return true;
+        }
+        $(document).ready(function(){
+            $("#newPassword").keyup(function(){
+                var pwd=$(this).val();
+                var strength=0;
+                if(pwd.length>=8){
+                    strength+=1;
+                }
+                if(pwd.match(/[a-z]/)){
+                    strength+=1;
+                }
+                if(pwd.match(/[A-Z]/)){
+                    strength+=1;
+                }
+                if(pwd.match(/[0-9]/)){
+                    strength+=1;
+                }
+                if (pwd.match(/[$-/:-?{-~!"^_`\[\]]/)) {
+                    strength += 1;
+                }
+                if(strength<=2){
+                    $("#pstrength").text("WEAK");
+                }
+                else if(strength>=3 && strength <5){
+                    $("#pstrength").text("MEDIUM");
+                }
+                else{
+                    $("#pstrength").text("STRONG");
+                }
+                
+            });
+        });
+        
+    </script>
+</body>
+</html>
+
+
+

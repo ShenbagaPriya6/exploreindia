@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Journey Through India's Culture</title>
+    <link rel="icon" type="image/x-icon" href="india.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <style>
+        #dashboard {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #dashboard .about-india {
+            width: 40%;
+            padding: 0 20px;
+        }
+
+        #dashboard .about-india img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #dashboard .categories {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #dashboard .categories .category {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        #select-state-btn {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .top-destinations {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        #external-link {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .about-india-para {
+            background-color: #eee;
+            width: 70%;
+        }
+    </style>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+</head>
+
+<body>
+    <header>
+        <h1>A Journey Through India's Culture</h1>
+        <a href="login.html" class="login-signup" onmouseover="underline(this)"
+            onmouseout="removeUnderline(this)"><b>LOGIN</b></a>
+        <a href="signup.html" class="login-signup" onmouseover="underline(this)"
+            onmouseout="removeUnderline(this)"><b>SIGNUP</b></a>
+        <a href="about.html" class="login-signup" onmouseover="underline(this)"
+            onmouseout="removeUnderline(this)"><b>ABOUT</b></a>
+    </header>
+    <div id="dashboard">
+        <div class="about-india">
+            <img src="img.jpg" alt="indian_culture_heritage">
+        </div>
+        <div class="about-india-para">
+            <p style="font-size: large;" id="para">India is called a unique place not only in
+                geographical terms but also in the
+                terms of culture and tradition that India posses and this rich culture and
+                tradition have become our identity.
+                There is not only richness in culture which exhibits unique nature but indirectly this
+                results in the development of the country. Unlike other countries, India which is a
+                developing country, inspite of all its differences in religion , caste , culture etc it stands
+                together as one. This is what which makes India unique. Hence Indian culture plays a
+                cardinal role in development also and makes India standout.
+                India is a land of tourists. India has always been a center of
+                attraction to people all around the globe due to its vibrant
+                culture, richness in tradition , how people perform their rituals ,
+                their food habits , their dressing style , their dance , their
+                marriages and each and every thing possible.
+                Though every country posses its own tradition, culture yet India is considered as the only unique place
+                which exhibits an assemblage of different cultures and traditions which is different from the other
+                countries. India which is often called as the heritage land also posses few remarkable structures ,
+                sculptures, architectures, buildings, paintings , which portray their tradition. This is not found
+                anywhere else across the globe. This is also a reason which makes India rare, incomparable and unique.
+
+            </p>
+
+        </div>
+    </div>
+    <div>
+        <div class="categories">
+            <div class="category" id="food">
+                <h2><a href="indianfoods.html">Food</a></h2>
+            </div>
+            <div class="category" id="traditions">
+                <h2><a href="indiantraditions.html">Traditions</a></h2>
+            </div>
+            <div class="category" id="festivals">
+                <h2><a href="indianfestival.html">Festivals</a></h2>
+            </div>
+            <div class="category" id="history">
+                <h2><a href="indianhistory.html">History</a></h2>
+            </div>
+            <div class="category" id="heritage">
+                <h2><a href="indianmonuments.html">Monuments</a></h2>
+            </div>
+            <div class="category" id="arts">
+                <h2><a href="indianarts.html">Arts</a></h2>
+            </div>
+        </div>
+    </div>
+    <div id="slider-container"></div>
+    <div id="select-state-btn" style="align-items: center;">
+        <button onclick="window.location.href='signup.html'"
+            style="background-color:black;color:white;width:30% ;padding:15px"><b>SELECT STATE</b></button>
+    </div>
+    <h2 class="top-destinations">TOP DESTINATIONS</h2>
+    <div class="top-destinations">
+        <div id="destination-slider" class="destination-slider">
+            <!-- Destination elements will be dynamically added here -->
+        </div>
+    </div>
+    <h2 style="text-align: center;">EXTERNAL LINK</h2>
+    <div class="top-destinations">
+        <div class="destination-container">
+            <a href="https://ndl.iitkgp.ac.in/">
+                <img class="destination-img" src="natlib.png" alt="tamilnadu">
+                <p class="destination-name">NATIONAL DIGITAL LIBRARY</p>
+            </a>
+        </div>
+        <div class="destination-container">
+            <a href="https://www.namami.gov.in/">
+                <img class="destination-img" src="nmm.jpg" alt="Destination 2">
+                <p class="destination-name">NATIONAL MISSION FOR MANUSCRIPTS</p>
+            </a>
+        </div>
+        <div class="destination-container">
+            <a href="https://vedicheritage.gov.in/">
+                <img class="destination-img" src="vedic.jpg" alt="Destination 3">
+                <p class="destination-name">VEDIC HERITAGE</p>
+            </a>
+        </div>
+        <div class="destination-container">
+            <a href="https://ncaa.gov.in/repository/">
+                <img class="destination-img" src="NCAA.jpg" alt="Destination 4">
+                <p class="destination-name">AUDIOVISUAL ARCHIVE</p>
+            </a>
+        </div>
+    </div>
+    <script>
+        function underline(element) {
+            element.style.textDecoration = 'underline';
+        }
+
+        function removeUnderline(element) {
+            element.style.textDecoration = 'none';
+        }
+        // Function to fetch and parse JSON data
+        function fetchDestinations() {
+            return fetch('destinations.json')
+                .then(response => response.json())
+                .catch(error => console.error('Error fetching destinations:', error));
+        }
+
+        // Function to create a destination element
+        function createDestinationElement(destination) {
+            const destinationElement = document.createElement('div');
+            destinationElement.classList.add('destination-container');
+            const destinationLink = document.createElement('a');
+            destinationLink.href = destination.link;
+            const destinationImage = document.createElement('img');
+            destinationImage.classList.add('destination-img');
+            destinationImage.src = destination.imageUrl;
+            destinationImage.alt = destination.name;
+            const destinationName = document.createElement('p');
+            destinationName.classList.add('destination-name');
+            destinationName.textContent = destination.name;
+            destinationLink.appendChild(destinationImage);
+            destinationLink.appendChild(destinationName);
+            destinationElement.appendChild(destinationLink);
+            return destinationElement;
+        }
+
+        // Function to initialize the destination slider
+        function initializeDestinationSlider() {
+            const destinationSlider = document.getElementById('destination-slider');
+            fetchDestinations().then(destinations => {
+                let row = document.createElement('div');
+                row.classList.add('destination-row');
+                destinationSlider.appendChild(row);
+
+                destinations.forEach((destination, index) => {
+                    const destinationElement = createDestinationElement(destination);
+                    row.appendChild(destinationElement);
+
+                    // Check if the row is full or if it's the last destination
+                    if ((index + 1) % 6 === 0 || index === destinations.length - 1) {
+                        row = document.createElement('div');
+                        row.classList.add('destination-row');
+                        destinationSlider.appendChild(row);
+                    }
+                });
+            });
+        }
+
+        // Call the initializeDestinationSlider function when the page is loaded
+        document.addEventListener('DOMContentLoaded', initializeDestinationSlider);
+
+    </script>
+    </script>
+    <!-- Include React Component -->
+    <script type="text/babel" src="Slider.js"></script>
+</body>
+
+</html>

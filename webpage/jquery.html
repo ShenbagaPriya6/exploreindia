@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>jquery</title>
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+    <p id="name">TAJ MAHAL</p>
+    <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of
+        Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the
+        tomb of his favourite wife, Mumtaz Mahal.</p>
+    <div id="contr" style="display:none;align-items: center;">
+        <img src="heritage.jpg" width="50%" height="50%" style="margin:10px;"><br>
+        <button id="hbtn">HIDE IMAGE</button>
+    </div>
+    <button id="sbtn">SHOW IMAGE</button>
+    <script>
+        $(document).ready(function(){
+            $("#sbtn").click(function(){
+                $("#contr").show();
+                $("#sbtn").hide();
+            });
+            $("#hbtn").click(function(){
+                $("#contr").hide();
+                $("#sbtn").show();
+            });
+        });
+    </script>
+</body>
+</html>

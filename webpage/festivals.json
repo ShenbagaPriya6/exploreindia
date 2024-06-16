@@ -1,0 +1,60 @@
+{
+    "Tamil Nadu": {
+        "festivals": [
+            {
+                "name": "Pongal Festival",
+                "description": "Pongal is a four-day-long harvest festival celebrated in Tamil Nadu. It marks the beginning of the Tamil month Thai (mid-January). The festival is dedicated to the Sun God (Surya), and it involves boiling rice with fresh milk and jaggery in a clay pot until it overflows, symbolizing abundance and prosperity. It is also a time for family gatherings, traditional dances like Kolam and Pongal, and offering prayers to cattle.",
+                "image": "https://i.ytimg.com/vi/qgSwHsGaY48/maxresdefault.jpg"
+            },
+            {
+                "name": "Chithirai Festival",
+                "description": "Chithirai Festival is a significant celebration in Tamil Nadu, especially in Madurai, commemorating the wedding of Goddess Meenakshi to Lord Sundareswarar. The festival lasts for around two weeks and features grand processions, temple rituals, cultural performances, and traditional music. It attracts thousands of devotees and tourists from all over the world.",
+                "image": "https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/chithirai-festival-1676876145_09dbf723b24e5aa2c618.webp"
+            },
+            {
+                "name": "Karthikai Deepam Festival",
+                "description": "In the evening, as dusk falls, the main highlight of the festival takes place when a huge beacon or bonfire (known as the Mahadeepam or Maha Deepam) is lit atop the hills or temples. This beacon symbolizes the divine light (jyoti) of Lord Shiva or Lord Murugan and is believed to dispel darkness and ignorance.The lighting of lamps and the beacon signifies the victory of light over darkness and is considered highly auspicious. It is believed to bring peace, prosperity, and happiness into the lives of devotees. The festival also fosters a sense of community as people come together to celebrate and share the joy of Karthigai Deepam.Karthigai Deepam is not only a religious festival but also holds cultural significance, as it is deeply rooted in the traditions and heritage of South India. The festival is celebrated with great fervor and enthusiasm, creating a vibrant atmosphere filled with light, devotion, and spirituality.",
+                "image": "https://www.adotrip.com/public/images/festivals/master_images/5de8a3ffb37b1-Karthigai_Deepam%20_Attractions.jpg"
+            }
+        ]
+    },
+    "Kerala": {
+        "festivals": [
+            {
+                "name": "Onam Festival",
+                "description": "Onam is the most important festival in Kerala, celebrated with great enthusiasm and fervor. It is a harvest festival that marks the return of the mythical King Mahabali. The festival spans ten days and includes various cultural events, rituals, and feasts. Highlights of Onam include the Vallam Kali (boat race), Pulikali (tiger dance), Pookalam (floral decorations), and Onasadya (grand feast). It is a time for family reunions, cultural performances, and showcasing Kerala's rich cultural heritage.",
+                "image": "https://res.cloudinary.com/local-tourism/images/c_scale,w_648,h_339,dpr_2/f_webp,q_auto/v1686899612/Post/Onam%20-%20An%20Essential%20Guide%20to%20the%20Indian%20Festival/Onam_2023_hcmilx/Onam_2023_hcmilx.webp?_i=AA"
+            },
+            {
+                "name": "Thrissur Pooram",
+                "description": "Thrissur Pooram is an annual temple festival celebrated in Thrissur, Kerala. It is known for its grandeur and the participation of numerous elephants adorned with decorative accessories. The festival features spectacular processions of richly decorated elephants, traditional music, and cultural performances. Thrissur Pooram is a vibrant display of Kerala's traditional art forms and religious fervor.",
+                "image": "https://www.keralatourism.org/images/picture/large/Caparisoned_elephants_and_energetic_crowd_at_Thrissur_Pooram_celebrations_2649.jpg"
+            },
+            {
+                "name": "Vishu",
+                "description": "Vishu is a significant festival celebrated in Kerala to mark the beginning of the Malayalam New Year. It is observed with traditional rituals, including the setting up of Vishukkani, a display of auspicious items, and Vishukkaineetam, the custom of giving money to younger members of the family. Vishu is a time for family gatherings, feasting, and cultural events.",
+                "image": "https://www.vishufestival.org/images/vishu-festival.jpg"
+            }
+        ]
+    },
+    "Karnataka": {
+        "festivals": [
+            {
+                "name": "Dasara Festival",
+                "description": "Dasara, also known as Navaratri, is a major Hindu festival celebrated in Karnataka and other parts of India. It commemorates the victory of good over evil, symbolized by the triumph of Goddess Durga over the demon Mahishasura. Dasara spans nine nights and ten days and includes elaborate rituals, religious ceremonies, processions, and cultural performances. The Mysore Dasara is particularly famous for its grandeur and festivities.",
+                "image": "https://www.hindustantimes.com/ht-img/img/2023/10/17/1600x900/WhatsApp_Image_2023-10-17_at_65544_PM_1697549201364_1697549201582.jpeg"
+            },
+            {
+                "name": "Hampi Utsav",
+                "description": "Hampi Utsav is a cultural extravaganza held annually in Hampi, Karnataka, to celebrate the rich heritage and history of the region. The festival features traditional music, dance performances, puppet shows, drama, and various other cultural activities. It attracts tourists and artists from all over the world and offers a unique opportunity to experience Karnataka's vibrant culture amidst the stunning ruins of Hampi.",
+                "image": "https://www.karnataka.com/wp-content/uploads/2014/01/hampi-utsav-2.jpg"
+            },
+            {
+                "name": "Ugadi Festival",
+                "description": "Ugadi, also known as the Kannada New Year, is a significant festival celebrated in Karnataka and other states of South India. It marks the beginning of a new year according to the Hindu lunisolar calendar. The festival is observed with various rituals, traditional customs, and festive gatherings. People clean and decorate their homes, wear new clothes, prepare special dishes like holige (puran poli), mango pachadi, and participate in cultural events. Ugadi is a time for renewal, prosperity, and seeking blessings for the year ahead.",
+                "image": "https://idolkart.com/cdn/shop/articles/Untitled_design_6.png?v=1697467792&width=1500"
+            }
+        ]
+    }
+}
+

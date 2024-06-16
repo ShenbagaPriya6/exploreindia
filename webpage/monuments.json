@@ -1,0 +1,155 @@
+{
+    "Tamil Nadu": {
+        "monuments": [
+            {
+                "name": "Brihadeeswarar Temple",
+                "description": "Brihadeeshwara Temple (Peruvudaiyar Kovil) is a Hindu temple dedicated to Shiva located in Thanjavur in the Indian state of Tamil Nadu. It is also known as Periya Kovil, RajaRajeswara Temple and Rajarajesvaram. It is one of the largest temples in India and is an example of Dravidian architecture during the Chola period. Built by emperor Raja Raja Chola I and completed in 1010 AD, the temple turned 1000 years old in 2010. The temple is part of the UNESCO World Heritage Site known as the “Great Living Chola Temples”, with the other two being the Brihadeeswarar Temple, Gangaikonda Cholapuram and Airavatesvara temple. The temple stands amidst fortified walls that were probably added in the 16th century. The vimanam (temple tower) is 216 ft (66 m) high and is the tallest in the world. The Kumbam (the apex or the bulbous structure on the top) of the temple is carved out of a single rock and weighs around 80 tons. There is a big statue of Nandi (sacred bull), carved out of a single rock measuring about 16 ft (4.9 m) long and 13 ft (4.0 m) high at the entrance. The entire temple structure is made out of granite, the nearest sources of which are about 60 km to the west of temple. The temple is one of the most visited tourist attractions in Tamil Nadu.",
+                "image": "tnm1.jpeg"
+            },
+            {
+                "name": "Meenakshi Amman Temple",
+                "description": "The Meenakshi Amman Temple is a historic Hindu temple dedicated to Meenakshi, an avatar of the goddess Parvati, and her consort, Sundareswarar, an avatar of Shiva.Two principal sanctuaries (accessible only by Hindus) sit at the center of the temple complex: one dedicated to Meenakshi (who is considered a manifestation of the goddess Parvati), and another dedicated to Sundareshwara or “Beautiful Lord” (a form of the god Shiva). A gold , visible only from a high vantage point, caps each of these sanctuaries. Fronting each sanctuary is a mandapa (a pillared, porch-like structure) that pilgrims pass through as they make their way to the garbagriha (the innermost sacred areas of the sanctuary). Each Friday evening, sculpted figures of Meenakshi and Sundareshwara are placed upon a swing in the temple and gently rocked in imitation of a romantic interlude, and each spring they are celebrated in a massive multi-day festival. Two principal sanctuaries (accessible only by Hindus) sit at the center of the temple complex: one dedicated to Meenakshi (who is considered a manifestation of the goddess Parvati), and another dedicated to Sundareshwara or “Beautiful Lord” (a form of the god Shiva). A gold , visible only from a high vantage point, caps each of these sanctuaries. Fronting each sanctuary is a mandapa (a pillared, porch-like structure) that pilgrims pass through as they make their way to the garbagriha (the innermost sacred areas of the sanctuary).",
+                "image": "tnm2.jpeg"
+            },
+            {
+                "name": "Shore Temple",
+                "description": "The Shore Temple (c. 725 AD) is a complex of temples and shrines that overlooks the shore of the Bay of Bengal. It is located in Mahabalipuram, about 60 kilometres (37 mi) south of Chennai in Tamil Nadu, India. It is a structural temple, built with blocks of granite, dating from the 8th century AD. At the time of its creation, the site was a busy port during the reign of Narasimhavarman II of the Indian Pallava dynasty. As one of the Group of Monuments at Mahabalipuram, it has been classified as a UNESCO World Heritage Site since 1984. It is one of the oldest structural (versus rock-cut) stone temples of Southern India.",
+                "image": "tnm3.jpg"
+            }
+        ]
+    },
+    "Kerala": {
+        "monuments": [
+            {
+                "name": "Padmanabhaswamy Temple",
+                "description": "The Padmanabhaswamy Temple, located in Thiruvananthapuram, Kerala, is a revered Hindu temple dedicated to Lord Vishnu in his reclining form. This architectural marvel boasts a blend of Dravidian and Kerala styles, featuring intricate carvings, gopurams (towering gateways), and a majestic sanctum adorned with gold-plated roofs. The temple's inner sanctum, adorned with priceless treasures and ancient murals, exudes opulence and spirituality. A sacred site of pilgrimage and devotion, the Padmanabhaswamy Temple stands as a symbol of Kerala's rich cultural and religious heritage.",
+                "image": "kerelam1.jpg"
+            },
+            {
+                "name": "Mattancherry Palace",
+                "description": "Mattancherry Palace, also known as the Dutch Palace, is a cultural gem nestled in the heart of Kochi, Kerala. Built by the Portuguese in the 16th century and later renovated by the Dutch, this architectural marvel showcases Kerala's rich heritage through its exquisite murals, depicting scenes from the Ramayana and other Hindu epics. The palace's ornate architecture, wooden ceilings, and sprawling courtyards reflect the grandeur of Kerala's royal past. Visitors can marvel at the palace's intricate artwork and explore its history, making it a must-visit destination for art and history enthusiasts.",
+                "image": "kerelam2.jpeg"
+            },
+            {
+                "name": "Bekal Fort",
+                "description": "Bekal Fort, located in Kasaragod district, Kerala, is a testament to the region's military prowess and architectural brilliance. Perched atop a hill overlooking the Arabian Sea, this imposing fort offers breathtaking views of the coastline and surrounding landscape. Constructed by Shivappa Nayaka of Keladi in the 17th century, Bekal Fort served as a strategic stronghold against invading forces. Its well-preserved ramparts, bastions, and secret passageways bear witness to Kerala's vibrant history and cultural heritage. Today, Bekal Fort stands as a symbol of resilience and a popular tourist destination, attracting visitors with its scenic beauty and historical significance.",
+                "image": "kerelam3.jpeg"
+            }
+        ]
+    },
+    "Andhra Pradesh": {
+        "monuments": [
+            {
+                "name": "Tirumala Venkateswara Temple",
+                "description": "The Tirumala Venkateswara Temple, located atop the Tirumala Hills in Chittoor district, Andhra Pradesh, is one of the most revered Hindu temples in the world. Dedicated to Lord Venkateswara, an incarnation of Lord Vishnu, this sacred shrine attracts millions of pilgrims and devotees annually. The temple's awe-inspiring architecture, towering gopurams (gateways), and serene surroundings make it a spiritual haven for seekers of divine blessings and inner peace.",
+                "image": "andhrap1.jpg"
+            },
+            {
+                "name": "Charminar",
+                "description": "Charminar, a historic monument and iconic symbol of Hyderabad, Telangana, is located in the heart of the old city. Built in 1591 by Sultan Muhammad Quli Qutb Shah, the Charminar is renowned for its majestic architecture, intricate carvings, and panoramic views of the city. The monument's four grand arches, each facing a different direction, symbolize the unity and diversity of the people. Visitors can explore the bustling markets and cultural heritage sites surrounding Charminar, immersing themselves in the rich tapestry of Hyderabad's history and culture.",
+                "image": "andhrap2.jpeg"
+            },
+            {
+                "name": "Sri Venkateswara Swamy Temple",
+                "description": "Sri Venkateswara Swamy Temple, also known as the Dwaraka Tirumala Temple, is a sacred Hindu shrine located in West Godavari district, Andhra Pradesh. Dedicated to Lord Venkateswara, the temple is renowned for its spiritual significance and architectural splendor. Devotees flock to this holy site to seek blessings and fulfill their vows, believing in the deity's divine grace and benevolence. Surrounded by picturesque hills and lush greenery, the temple offers a tranquil retreat for devotees and visitors alike.",
+                "image": "andhrap3.jpg"
+            }
+        ]
+    },
+    "Karnataka": {
+        "monuments": [
+            {
+                "name": "Mysore Palace",
+                "description": "Mysore Palace, also known as the Amba Vilas Palace, is a majestic royal residence located in the heart of Mysore, Karnataka. Built in the Indo-Saracenic style with influences from Hindu, Muslim, Rajput, and Gothic architectural elements, the palace is a visual extravaganza of grandeur and opulence. Adorned with intricately carved ceilings, stained glass windows, and ornate artworks, the palace reflects the rich cultural heritage of Karnataka's royal dynasty. Visitors can explore the palace's grand halls, royal chambers, and sprawling gardens, immersing themselves in the regal charm of bygone eras.",
+                "image": "karnatakam1.jpg"
+            },
+            {
+                "name": "Hampi",
+                "description": "Hampi, located in the Bellary district of Karnataka, is an ancient UNESCO World Heritage site that served as the capital of the Vijayanagara Empire. Renowned for its magnificent ruins, temples, and architectural marvels, Hampi offers a glimpse into India's glorious past. Visitors can explore the iconic Virupaksha Temple, majestic stone chariots of the Vittala Temple, and the imposing ruins of the Vijaya Vittala Temple complex, marveling at the intricate craftsmanship and rich history embedded in every stone. Hampi's surreal landscape, dotted with boulders and surrounded by the Tungabhadra River, makes it a captivating destination for history enthusiasts and spiritual seekers alike.",
+                "image": "karnatakam2.jpeg"
+            },
+            {
+                "name": "Gol Gumbaz",
+                "description": "Gol Gumbaz, located in Bijapur, Karnataka, is a magnificent mausoleum and architectural marvel built by the Adil Shahi dynasty in the 17th century. Renowned for its massive dome, which is the second-largest in the world after St. Peter's Basilica in Rome, Gol Gumbaz is a testament to the ingenuity and craftsmanship of medieval Indian architects. Visitors can marvel at the acoustics of the Whispering Gallery, ascend to the top of the dome for panoramic views of Bijapur, and explore the intricately carved corridors and tombs within the monument. Gol Gumbaz stands as a symbol of Bijapur's rich cultural heritage and architectural legacy.",
+                "image": "karnatakam3.jpg"
+            }
+        ]
+    },
+    "Uttar Pradesh": {
+        "monuments": [
+            {
+                "name": "Taj Mahal",
+                "description": "The Taj Mahal, located in Agra, Uttar Pradesh, is an iconic symbol of love and a UNESCO World Heritage site. Built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, this architectural masterpiece is renowned for its exquisite marble craftsmanship, intricate carvings, and symmetrical gardens. The Taj Mahal's mesmerizing beauty, especially during sunrise and sunset, attracts millions of visitors from around the world, making it one of the most photographed monuments on the planet.",
+                "image": "up1.jpg"
+            },
+            {
+                "name": "Fatehpur Sikri",
+                "description": "Fatehpur Sikri, a UNESCO World Heritage site located near Agra, Uttar Pradesh, is a magnificent fortified city built by Emperor Akbar in the 16th century. Renowned for its blend of Mughal, Persian, and Hindu architectural styles, Fatehpur Sikri boasts grand palaces, mosques, and courtyards adorned with intricate carvings and geometric patterns. Visitors can explore iconic landmarks such as the Buland Darwaza, Jama Masjid, and Panch Mahal, marveling at the city's historical significance and architectural splendor.",
+                "image": "up2.jpg"
+            },
+            {
+                "name": "Varanasi Ghats",
+                "description": "Varanasi, also known as Kashi or Banaras, is a sacred city situated on the banks of the Ganges River in Uttar Pradesh. Renowned for its ancient temples, ghats (riverfront steps), and spiritual ambiance, Varanasi is considered one of the oldest continuously inhabited cities in the world. Visitors can experience the mesmerizing Ganga Aarti ceremony at the Dashashwamedh Ghat, explore the narrow lanes of the old city, and witness the rituals of life and death along the ghats, immersing themselves in the rich tapestry of Varanasi's culture and heritage.",
+                "image": "up3.jpg"
+            }
+        ]
+    },
+    "Madhya Pradesh": {
+        "monuments": [
+            {
+                "name": "Khajuraho Group of Monuments",
+                "description": "The Khajuraho Group of Monuments, located in the Chhatarpur district of Madhya Pradesh, is a UNESCO World Heritage site renowned for its exquisite temples and intricate sculptures. Built between the 9th and 11th centuries by the Chandela dynasty, these temples showcase the architectural brilliance and artistic mastery of ancient Indian craftsmen. The sculptures depict various aspects of life, including gods, goddesses, celestial beings, animals, and humans engaged in everyday activities and divine rituals. Visitors can marvel at the intricacy and sensuality of Khajuraho's sculptures, reflecting the timeless beauty and cultural heritage of India.",
+                "image": "mp1.jpg"
+            },
+            {
+                "name": "Sanchi Stupa",
+                "description": "The Great Stupa at Sanchi, located in the Raisen district of Madhya Pradesh, is one of the oldest stone structures in India and a UNESCO World Heritage site. Built by Emperor Ashoka in the 3rd century BCE, the stupa is a symbol of Buddhism's spread and development in India. Surrounded by ancient monasteries, stupas, and votive pillars, Sanchi Stupa offers a glimpse into India's rich Buddhist heritage and architectural legacy. Visitors can explore the intricately carved gateways (toranas), meditate in the serene surroundings, and contemplate the teachings of Lord Buddha, making it a sacred pilgrimage site for Buddhists and seekers of spiritual wisdom.",
+                "image": "mp2.jpg"
+            },
+            {
+                "name": "Gwalior Fort",
+                "description": "Gwalior Fort, located in the city of Gwalior, Madhya Pradesh, is a formidable hill fort and architectural marvel that has stood for over a thousand years. Built by various dynasties, including the Tomars, Mughals, and Scindias, the fort boasts a rich history and cultural heritage. Perched atop a sandstone hill, Gwalior Fort overlooks the city and offers panoramic views of the surrounding landscape. Visitors can explore its imposing ramparts, palaces, temples, and water tanks, marveling at the craftsmanship and strategic design that have ensured its survival through the ages.",
+                "image": "mp3.jpg"
+            }
+        ]
+    },
+    "Jammu & Kashmir": {
+        "monuments": [
+            {
+                "name": "Vaishno Devi Temple",
+                "description": "The Vaishno Devi Temple, nestled in the Trikuta Mountains of Jammu and Kashmir, is one of the holiest Hindu shrines dedicated to Goddess Shakti. Perched at an altitude of 5,200 feet, the temple attracts millions of pilgrims annually who embark on a challenging trek to seek the blessings of the divine mother. The cave shrine, housing the sacred 'pindis' representing Goddess Mahakali, Goddess Mahalakshmi, and Goddess Mahasaraswati, is believed to fulfill the wishes of devotees and bestow divine grace upon them. Surrounded by breathtaking natural beauty and spiritual ambiance, Vaishno Devi Temple offers a transformative journey of faith and devotion.",
+                "image": "jammu1.jpg"
+            },
+            {
+                "name": "Dal Lake",
+                "description": "Dal Lake, often referred to as the 'Jewel in the Crown of Kashmir,' is a picturesque lake located in Srinagar, Jammu and Kashmir. Surrounded by snow-capped mountains, lush gardens, and floating houseboats, Dal Lake is a symbol of Kashmir's natural beauty and cultural heritage. Visitors can enjoy shikara rides, houseboat stays, and shopping at the floating markets, immersing themselves in the serene tranquility of the lake. The reflection of colorful houseboats and vibrant flowers in the crystal-clear waters of Dal Lake creates a mesmerizing spectacle that enchants travelers from around the world.",
+                "image": "jammu2.jpg"
+            },
+            {
+                "name": "Jama Masjid",
+                "description": "Jama Masjid, located in the heart of Srinagar's old city, is one of the largest and most revered mosques in Jammu and Kashmir. Built in the 14th century by Sultan Sikandar Butshikan, the mosque's exquisite architecture and historical significance make it a prominent landmark of Kashmiri heritage. With its towering minarets, intricate woodwork, and spacious courtyard, Jama Masjid provides a tranquil space for prayer and reflection amid the bustling streets of Srinagar. Visitors can admire the mosque's architectural beauty, explore its rich history, and experience the spiritual ambiance of Kashmiri culture.",
+                "image": "jammu3.jpg"
+            }
+        ]
+    },
+    "West Bengal": {
+        "monuments": [
+            {
+                "name": "Victoria Memorial",
+                "description": "The Victoria Memorial, located in Kolkata, West Bengal, is a majestic marble monument dedicated to Queen Victoria of the United Kingdom. Built in the Indo-Saracenic revivalist style, the memorial serves as a museum and tourist attraction, showcasing exhibits related to the British colonial period in India. Surrounded by sprawling gardens and adorned with sculptures, fountains, and a grand dome, the Victoria Memorial stands as a symbol of Kolkata's rich history and cultural heritage.",
+                "image": "kolkata1.jpg"
+            },
+            {
+                "name": "Howrah Bridge",
+                "description": "Howrah Bridge, also known as Rabindra Setu, is an iconic cantilever bridge that spans the Hooghly River in Kolkata, West Bengal. Built in 1943, the bridge is one of Kolkata's most recognizable landmarks, connecting the city's bustling metropolis with the bustling industrial suburb of Howrah. With its majestic steel structure and panoramic views of the river, Howrah Bridge is not only a vital transportation artery but also a symbol of Kolkata's resilience and architectural ingenuity.",
+                "image": "kolkata2.jpg"
+            },
+            {
+                "name": "Indian Museum",
+                "description": "The Indian Museum, located in Kolkata, West Bengal, is the oldest and largest museum in India. Founded in 1814 by the Asiatic Society of Bengal, the museum houses a vast collection of artifacts, artworks, and archaeological finds spanning over 5,000 years of history. Visitors can explore exhibits related to Indian art, culture, natural history, and anthropology, offering insights into the country's diverse heritage and ancient civilizations.",
+                "image": "kolkata3.jpg"
+            }
+        ]
+    }
+}
+

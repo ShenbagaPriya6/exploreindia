@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>A Journey Through India's Culture</title>
+    <link rel="icon" type="image/x-icon" href="india.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .form-container {
+            width: 50%;
+            margin: 0 auto;
+            text-align: left;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="time"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            background-color: #000700;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-group label {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>A Journey Through India's Culture</h1>
+    </header>
+    <h1 style="text-align:center;">EVENT</h1>
+    <div class="form-container">
+        <form action="AdminServlet" method="post">
+            <div class="form-group">
+                <label for="state">State Name:</label>
+                <select id="state" name="state">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Wind Bengal">West Bengal</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="The Government of NCT of Delhi">The Government of NCT of Delhi</option>
+                    <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                    <option value="Ladakh">Ladakh</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="Arts">Arts</option>
+                    <option value="Monuments">Monuments</option>
+                    <option value="Food">Food</option>
+                    <option value="Festival">Festivals</option>
+                    <option value="Traditions">Traditions</option>
+                    <option value="History">History</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" name="eventName" onkeyup="changeuppercase()">
+            </div>
+            <div class="form-group">
+                <label for="description">Event Decription:</label>
+                <input type="text" id="description" name="description">
+            </div>
+            <div class="form-group">
+                <label>Possibility of Booking Event:</label>
+                <div class="radio-group">
+                    <input type="radio" id="yes" name="bookingPossibility" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="bookingPossibility" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="dateFrom">Date of Event (From):</label>
+                <input type="date" id="dateFrom" name="dateFrom" max="">
+            </div>
+
+            <div class="form-group">
+                <label for="dateTo">Date of Event (To):</label>
+                <input type="date" id="dateTo" name="dateTo" max="">
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script>
+        window.onload = function () {
+            var currentDate = new Date();
+            var minDateFrom = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+            var maxDateTo = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 90);
+
+            document.getElementById('dateFrom').min = formatDate(minDateFrom);
+            document.getElementById('dateFrom').max = formatDate(maxDateTo);
+            document.getElementById('dateTo').min = formatDate(minDateFrom);
+            document.getElementById('dateTo').max = formatDate(maxDateTo);
+
+            // Add event listeners for date inputs
+            document.getElementById('dateFrom').addEventListener('change', function () {
+                var selectedDate = new Date(this.value);
+                if (selectedDate > maxDateTo) {
+                    alert('Please enter a date within the next 90 days.');
+                    this.value = '';
+                }
+            });
+
+            document.getElementById('dateTo').addEventListener('change', function () {
+                var selectedDate = new Date(this.value);
+                if (selectedDate > maxDateTo || selectedDate < minDateFrom) {
+                    alert('Please enter a date within 90 days from today.');
+                    this.value = '';
+                }
+            });
+        }
+
+        // Function to convert event description to uppercase
+        function changeuppercase() {
+            let val = document.getElementById("eventName");
+            val.value = val.value.toUpperCase();
+        }
+
+    </script>
+</body>
+</html>

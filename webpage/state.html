@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="india.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        #dashboard {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .category a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+
+        .category h2 {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            margin: 0;
+        }
+
+        .category {
+            width: 20%;
+            display: inline-block;
+            margin: 10px;
+            padding: 120px;
+            border-radius: 8px;
+            color: #000;
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+        }
+
+        .category#food {
+            background-image: url('food.jpg');
+        }
+
+        .category#traditions {
+            background-image: url('traditions.jpg');
+        }
+
+        .category#festivals {
+            background-image: url('festivals.jpg');
+        }
+
+        .category#history {
+            background-image: url('history.jpg');
+        }
+
+        .category#heritage {
+            background-image: url('heritage.jpg');
+        }
+
+        .category#arts {
+            background-image: url('arts.jpg');
+        }
+
+        .page-content {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exploring <span id="state-name"></span>'s Timeless Tapestry</h1>
+    </header>
+
+    <div id="dashboard">
+        <div class="category" id="food">
+            <h2><a href="#" onclick="navigatefood()">Foods</a></h2>
+        </div>
+
+        <div class="category" id="traditions">
+            <h2><a href="#" onclick="navigatetraditions()">Traditions</a></h2>
+        </div>
+
+        <div class="category" id="festivals">
+            <h2><a href="#" onclick="navigatefestivals()">Festivals</a></h2>
+        </div>
+
+        <div class="category" id="history">
+            <h2><a href="#" onclick="navigatehistory()">History</a></h2>
+        </div>
+        <div class="category" id="heritage">
+            <h2><a href="#" onclick="navigatemonuments()">Temples and Monuments</a></h2>
+        </div>
+
+        <div class="category" id="arts">
+            <h2><a href="#" onclick="navigatearts()">Arts</a></h2>
+        </div>
+    </div>
+    <script>
+        var stateName = "";
+        document.addEventListener("DOMContentLoaded", function () {
+            stateName = getUrlParameter('state');
+            document.title = stateName;
+            document.getElementById('state-name').innerText = stateName;
+        });
+
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            console.log(urlParams.get(name));
+            return urlParams.get(name);
+        }
+
+        function navigatehistory() {
+            window.location.href = 'history.html?state=' + encodeURIComponent(stateName);
+        }
+        function navigatearts() {
+            window.location.href = 'arts.html?state=' + encodeURIComponent(stateName);
+        }
+        function navigatemonuments() {
+            window.location.href = 'monuments.html?state=' + encodeURIComponent(stateName);
+        }
+        function navigatefood() {
+            window.location.href = 'food.html?state=' + encodeURIComponent(stateName);
+        }
+        function navigatefestivals() {
+            window.location.href = 'festival.html?state=' + encodeURIComponent(stateName);
+        }
+        function navigatetraditions() {
+            if (stateName === 'Kerala') {
+                window.location.href = 'traditions.html?state=Kerala';
+            } else {
+                window.location.href = 'traditions.html?state=' + encodeURIComponent(stateName);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

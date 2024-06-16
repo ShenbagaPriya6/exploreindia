@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>STATE Foods</title>
+    <link rel="icon" type="image/x-icon" href="india.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            text-align: left;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        #recent-events {
+            height: 20vh;
+            background-color: #ddd;
+            padding: 10px;
+            overflow: auto;
+            text-align: left;
+        }
+
+        #foods-container {
+            display: flex;
+            justify-content: space-between;
+            height: 80vh;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+
+        .foods-category {
+            width: 30%;
+            background-color: #eee;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .foods-category img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            /* Added margin to separate image from description */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exploring <span id="state-name"></span>'s Culinary Delights: Traditional Foods</h1>
+    </header>
+
+    <div id="recent-events">
+        <!-- Recent events will be dynamically added here -->
+    </div>
+    <div id="foods-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var stateName = getUrlParameter('state');
+            var categoryName = "Food";
+            document.title = stateName + " Foods";
+            document.getElementById('state-name').innerText = stateName;
+            fetchFoodData(stateName);
+            fetchRecentEvents(stateName, categoryName);
+        });
+
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        function fetchRecentEvents(stateName, categoryName) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'EventsServlet?state=' + stateName + '&category=' + categoryName, true);
+            xhr.onload = function () {
+                if (xhr.status == 200) {
+                    var recentEvents = JSON.parse(xhr.responseText);
+                    displayRecentEvents(recentEvents);
+                }
+            };
+            xhr.send();
+        }
+
+        function displayRecentEvents(recentEvents) {
+            var recentEventsContainer = document.getElementById('recent-events');
+            recentEventsContainer.innerHTML = '<h2>Recent Events</h2>';
+            if (recentEvents.length === 0) {
+                recentEventsContainer.innerHTML += '<p>No recent events found.</p>';
+            } else {
+                recentEvents.forEach(function (event) {
+                    var eventText = event.eventName + ' - ' + event.description;
+                    var buttonHTML = event.bookingPossibility === 'yes' ? '<button class="book-now-btn" style="background-color:black;color:white;float:right;">Book Now</button>' : '<button class="book-now-btn" style="color:black;float:right;"disabled>Not Available for Booking</button>';
+                    recentEventsContainer.innerHTML += '<p>' + eventText + buttonHTML + '</p>';
+                });
+                // Add event listeners to dynamically created buttons
+                var bookNowButtons = document.getElementsByClassName('book-now-btn');
+                Array.from(bookNowButtons).forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        alert('Initiating booking process');
+                    });
+                });
+            }
+        }
+
+
+        function fetchFoodData(stateName) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'foods.json', true);
+            xhr.onload = function () {
+                if (xhr.status == 200) {
+                    var foodsData = JSON.parse(xhr.responseText)[stateName].foods;
+                    displayFoods(foodsData);
+                }
+            };
+            xhr.send();
+        }
+
+        function displayFoods(foodsData) {
+            var foodsContainer = document.getElementById('foods-container');
+            foodsData.forEach(function (food) {
+                var foodDiv = document.createElement('div');
+                foodDiv.classList.add('foods-category');
+                foodDiv.innerHTML = '<h2>' + food.name + '</h2>' +
+                    '<p>' + food.description + '</p>' +
+                    '<img src="' + food.image + '" alt="' + food.name + '">';
+                foodsContainer.appendChild(foodDiv);
+            });
+        }
+    </script>
+</body>
+
+</html>

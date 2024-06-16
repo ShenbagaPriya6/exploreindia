@@ -1,0 +1,59 @@
+{
+    "Tamil Nadu": {
+        "traditions": [
+            {
+                "name": "Pongal Festival",
+                "description": "Pongal is a four-day-long harvest festival celebrated in Tamil Nadu. It marks the beginning of the Tamil month Thai (mid-January). The festival is dedicated to the Sun God (Surya), and it involves boiling rice with fresh milk and jaggery in a clay pot until it overflows, symbolizing abundance and prosperity. It is also a time for family gatherings, traditional dances like Kolam and Pongal, and offering prayers to cattle.",
+                "image": "https://i.ytimg.com/vi/qgSwHsGaY48/maxresdefault.jpg"
+            },
+            {
+                "name": "Jallikattu",
+                "description": "Jallikattu is a traditional bull-taming sport practiced in Tamil Nadu, particularly during the Pongal festival. The event involves young men attempting to tame a bull that is released into a crowd. The bull is typically adorned with garlands and worshipped before the event. Jallikattu is a symbol of bravery and valor, and it has deep cultural and religious significance in Tamil Nadu.",
+                "image": "https://lms.chanakyamandal.org/wp-content/uploads/2021/02/f77a82c0-4544-458c-9e60-926154704fb9.jpg"
+            },
+            {
+                "name": "Bharatanatyam Dance",
+                "description": "Bharatanatyam is a classical dance form originating from Tamil Nadu. It is one of the oldest classical dance traditions in India, dating back to over 2,000 years. Bharatanatyam is known for its intricate footwork, graceful movements, expressive gestures (mudras), and elaborate costumes. It often depicts stories from Hindu mythology and has evolved as a sacred art form performed in temples and on special occasions.",
+                "image": "https://www.iasexam.com/wp-content/uploads/5-37-780x470.webp"
+            }
+        ]
+    },
+    "Kerala": {
+        "traditions": [
+            {
+                "name": "Onam Festival",
+                "description": "Onam is the most important festival in Kerala, celebrated with great enthusiasm and fervor. It is a harvest festival that marks the return of the mythical King Mahabali. The festival spans ten days and includes various cultural events, rituals, and feasts. Highlights of Onam include the Vallam Kali (boat race), Pulikali (tiger dance), Pookalam (floral decorations), and Onasadya (grand feast). It is a time for family reunions, cultural performances, and showcasing Kerala's rich cultural heritage.",
+                "image": "https://res.cloudinary.com/local-tourism/images/c_scale,w_648,h_339,dpr_2/f_webp,q_auto/v1686899612/Post/Onam%20-%20An%20Essential%20Guide%20to%20the%20Indian%20Festival/Onam_2023_hcmilx/Onam_2023_hcmilx.webp?_i=AA"
+            },
+            {
+                "name": "Kathakali Dance-Drama",
+                "description": "Kathakali is a classical dance-drama form originating from Kerala. It combines dance, music, storytelling, and elaborate costumes to depict stories from Indian epics like the Ramayana and Mahabharata. Kathakali performers undergo rigorous training in facial expressions (abhinaya), hand gestures (mudras), and body movements. The makeup (chutti), colorful costumes, and intricate headgear (mukut) are distinctive features of Kathakali.",
+                "image": "https://www.vedicmatters.com/images/article/article-2020-02-17-12-02-14_5e4a80c68c64c.png"
+            },
+            {
+                "name": "Theyyam Rituals",
+                "description": "Theyyam is a popular ritualistic art form practiced in northern Kerala, particularly in the Malabar region. It is a form of worship where performers, known as Theyyam artists, embody and channelize the divine spirit of gods and goddesses. Theyyam rituals involve elaborate makeup, costumes, and dance movements accompanied by drumming and chanting. Each Theyyam performance is considered sacred and is believed to bring blessings and protection to the community.",
+                "image": "https://miro.medium.com/v2/resize:fit:1400/1*Yh6Vyvb3b0hzmCCfHm7ppQ.jpeg"
+            }
+        ]
+    },
+    "Karnataka": {
+        "traditions": [
+            {
+                "name": "Dasara Festival",
+                "description": "Dasara, also known as Navaratri, is a major Hindu festival celebrated in Karnataka and other parts of India. It commemorates the victory of good over evil, symbolized by the triumph of Goddess Durga over the demon Mahishasura. Dasara spans nine nights and ten days and includes elaborate rituals, religious ceremonies, processions, and cultural performances. The Mysore Dasara is particularly famous for its grandeur and festivities.",
+                "image": "https://www.hindustantimes.com/ht-img/img/2023/10/17/1600x900/WhatsApp_Image_2023-10-17_at_65544_PM_1697549201364_1697549201582.jpeg"
+            },
+            {
+                "name": "Yakshagana",
+                "description": "Yakshagana is a traditional folk art form performed in Karnataka, especially in the coastal regions. It combines dance, music, dialogue, and elaborate costumes to enact mythological and historical stories. Yakshagana performances are usually held overnight and feature colorful characters, vibrant music (tala-maddale), and energetic dance movements. It is a form of community entertainment that preserves Karnataka's cultural heritage.",
+                "image": "https://iasnext.com/wp-content/uploads/2023/12/Yakshagana-Dance.webp"
+            },
+            {
+                "name": "Ugadi Festival",
+                "description": "Ugadi, also known as the Kannada New Year, is a significant festival celebrated in Karnataka and other states of South India. It marks the beginning of a new year according to the Hindu lunisolar calendar. The festival is observed with various rituals, traditional customs, and festive gatherings. People clean and decorate their homes, wear new clothes, prepare special dishes like holige (puran poli), mango pachadi, and participate in cultural events. Ugadi is a time for renewal, prosperity, and seeking blessings for the year ahead.",
+                "image": "https://idolkart.com/cdn/shop/articles/Untitled_design_6.png?v=1697467792&width=1500"
+            }
+        ]
+    }
+}

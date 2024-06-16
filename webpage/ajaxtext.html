@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="demo">
+        <h1>The history of India</h1>
+        <button type="button" onclick="loadDoc()">Get Content</button>
+    </div>
+    <script>
+        function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "ajaxtext.txt", true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

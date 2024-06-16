@@ -1,0 +1,59 @@
+{
+    "Tamil Nadu": {
+        "foods": [
+            {
+                "name": "Dosa and Idli",
+                "description": "Dosa and Idli are popular fermented rice and lentil-based dishes served as breakfast items in Tamil Nadu. They are often accompanied by sambar, a lentil-based vegetable stew, and various chutneys.",
+                "image": "dosa.jpg"
+            },
+            {
+                "name": "Chettinad Cuisine",
+                "description": "Chettinad Cuisine, originating from the Chettinad region, is known for its spicy and flavorful dishes. Chicken Chettinad, Chettinad Fish Curry, and Chettinad Pepper Chicken are some of the signature dishes.",
+                "image": "chettinad.jpg"
+            },
+            {
+                "name": "Pongal",
+                "description": "Pongal is a traditional dish made from rice and lentils, seasoned with pepper, cumin, and ghee. It is often served as a savory breakfast dish during the harvest festival of Pongal.",
+                "image": "pongal.jpg"
+            }
+        ]
+    },
+    "Kerala": {
+        "foods": [
+            {
+                "name": "Appam with Stew",
+                "description": "Appam is a soft, fluffy pancake made from fermented rice batter and coconut milk. It is typically served with a creamy stew made from vegetables, meat, or fish.",
+                "image": "appam.jpg"
+            },
+            {
+                "name": "Fish Curry",
+                "description": "Fish Curry is a staple dish in Kerala, made with fresh catch, coconut milk, and a blend of spices. It is often served with steamed rice or appam.",
+                "image": "fish.jpg"
+            },
+            {
+                "name": "Puttu and Kadala Curry",
+                "description": "Puttu is a steamed rice cake layered with grated coconut, served with kadala curry, a spicy black chickpea curry cooked with coconut milk and spices.",
+                "image": "puttu.jpg"
+            }
+        ]
+    },
+    "Karnataka": {
+        "foods": [
+            {
+                "name": "Bisi Bele Bath",
+                "description": "Bisi Bele Bath is a flavorful rice-based dish cooked with lentils, vegetables, tamarind, and a special blend of spices. It is a wholesome and satisfying one-pot meal, often served with a dollop of ghee and crispy fried papad.",
+                "image": "bisi.jpg"
+            },
+            {
+                "name": "Mysore Masala Dosa",
+                "description": "Mysore Masala Dosa is a crispy dosa smeared with a spicy red chutney made from dried red chilies, garlic, and spices, and stuffed with a savory potato filling. It is a popular breakfast item in Karnataka.",
+                "image": "masaladosa.jpg"
+            },
+            {
+                "name": "Ragi Mudde",
+                "description": "Ragi Mudde is a nutritious staple food of Karnataka, made from ragi flour (finger millet) and water. It is cooked to a thick consistency and rolled into soft balls, often served with sambar or spicy chutney.",
+                "image": "raggi.jpg"
+            }
+        ]
+    }
+}

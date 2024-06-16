@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:output method="html" indent="yes"/>
+
+    <!-- Match the root element -->
+    <xsl:template match="/">
+        <html>
+            <head>
+                <title>XML to HTML Transformation</title>
+            </head>
+            <body>
+                <h1>State Information</h1>
+                <!-- Apply templates to process state elements -->
+                <xsl:apply-templates select="states/state"/>
+            </body>
+        </html>
+    </xsl:template>
+
+    <!-- Template to match state elements -->
+    <xsl:template match="state">
+        <div>
+            <h2><xsl:value-of select="@name"/></h2>
+            <p>Famous Food: <xsl:value-of select="food"/></p>
+            <p>Famous Monument: <xsl:value-of select="monument/name"/></p>
+            <p>Description: <xsl:value-of select="monument/description"/></p>
+        </div>
+    </xsl:template>
+
+</xsl:stylesheet>
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exploring <span id="state-name"></span>'s Timeless Tapestry: History</title>
+    <link rel="icon" type="image/x-icon" href="india.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #recent-events {
+            height: 20vh;
+            background-color: #ddd;
+            padding: 10px;
+            overflow: auto;
+            text-align: left;
+        }
+
+        #history-container {
+            display: flex;
+            justify-content: space-between;
+            height: 80vh;
+            padding: 20px;
+        }
+
+        .history-category {
+            width: 30%;
+            background-color: hsl(0, 0%, 93%);
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+            overflow: auto;
+        }
+
+        .history-category1 {
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+            overflow: auto;
+        }
+
+
+        .history-text {
+            width: 75%;
+            margin-right: 20px;
+        }
+
+        .history-image {
+            width: 25%;
+        }
+
+        .history-image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exploring <span id="state-name"></span>'s Timeless Tapestry: History</h1>
+    </header>
+
+    <div id="recent-events">
+    </div>
+    <div id="history-container">
+        <div class="history-category history-text">
+            <h2 style="text-align: left;">History:</h2>
+            <p id="history-description">Description</p>
+        </div>
+        <div class="history-category1 history-image">
+            <p id="image-name"></p>
+            <img id="state-image" src="" alt="picture">
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var stateName = getUrlParameter('state');
+            var categoryName = "History";
+            document.title = stateName + " History";
+            document.getElementById('state-name').innerText = stateName;
+            loadStateInfo(stateName);
+            fetchRecentEvents(stateName, categoryName);
+        });
+
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        function fetchRecentEvents(stateName, categoryName) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'EventsServlet?state=' + stateName + '&category=' + categoryName, true);
+            xhr.onload = function () {
+                if (xhr.status == 200) {
+                    var recentEvents = JSON.parse(xhr.responseText);
+                    displayRecentEvents(recentEvents);
+                }
+            };
+            xhr.send();
+        }
+
+        function displayRecentEvents(recentEvents) {
+            var recentEventsContainer = document.getElementById('recent-events');
+            recentEventsContainer.innerHTML = '<h2>Recent Events</h2>';
+            if (recentEvents.length === 0) {
+                recentEventsContainer.innerHTML += '<p>No events found.</p>';
+            } else {
+                recentEvents.forEach(function (event) {
+                    var eventText = event.eventName + ' - ' + event.description;
+                    var buttonHTML = event.bookingPossibility === 'yes' ? '<button class="book-now-btn" style="background-color:black;color:white;float:right;">Book Now</button>' : '<button class="book-now-btn" style="color:black;float:right;"disabled>Not Available for Booking</button>';
+                    recentEventsContainer.innerHTML += '<p>' + eventText + buttonHTML + '</p>';
+                });
+                var bookNowButtons = document.getElementsByClassName('book-now-btn');
+                Array.from(bookNowButtons).forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        alert('Initiating booking process');
+                    });
+                });
+            }
+        }
+
+        function loadStateInfo(stateName) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'history.json', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var data = JSON.parse(xhr.responseText);
+                    var stateInfo = data[stateName];
+                    if (stateInfo) {
+                        document.getElementById('history-description').innerText = stateInfo.description;
+                        document.getElementById('image-name').innerText = stateInfo.imageName;
+                        document.getElementById('state-image').src = stateInfo.imagePath;
+                    }
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

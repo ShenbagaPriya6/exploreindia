@@ -1,0 +1,59 @@
+{
+    "Tamil Nadu": {
+        "arts": [
+            {
+                "name": "Bharatanatyam Performance",
+                "description": "Bharatanatyam is a classical Indian dance form originating in Tamil Nadu. It is known for its grace, expressions, and intricate footwork. The dance repertoire includes nritta (pure dance), nritya (expressive dance), and natya (dramatic dance). Bharatanatyam performances often depict stories from Hindu mythology and spiritual themes.",
+                "image": "https://kalyanikalamandir.com/wp-content/uploads/2023/09/130.jpg"
+            },
+            {
+                "name": "Carnatic Music Concert",
+                "description": "Carnatic music is a classical music tradition of South India, particularly popular in Tamil Nadu. It is characterized by intricate melodies, rhythmic patterns, and expressive improvisations. Carnatic music concerts typically feature vocalists or instrumentalists accompanied by percussion and sometimes other instruments. The compositions range from devotional songs to complex musical compositions.",
+                "image": "https://www.sruti.com/backend/uploads/media/Pocket%20guide%20to%20Carnatic%20m-kutcheri.jpg"
+            },
+            {
+                "name": "Chola Bronze Sculpture",
+                "description": "Chola Bronze sculptures are a form of South Indian bronze sculpture originating in Tamil Nadu during the Chola dynasty (9th to 13th century CE). These sculptures are renowned for their exquisite craftsmanship and intricate detailing. Typically depicting Hindu gods and goddesses, Chola Bronze sculptures are considered masterpieces of Indian art and are found in temples and museums worldwide.",
+                "image": "https://i.pinimg.com/originals/ae/a6/f4/aea6f4cd9c161ccef0ec5964e45b812a.jpg"
+            }
+        ]
+    },
+    "Kerala": {
+        "arts": [
+            {
+                "name": "Kathakali Performance",
+                "description": "Kathakali is a traditional dance-drama form of Kerala. It combines dance, music, and acting to depict stories from Hindu mythology. Kathakali performers undergo rigorous training in facial expressions, hand gestures, and body movements. The elaborate makeup and costumes, along with synchronized music and percussion, create a captivating theatrical experience.",
+                "image": "https://www.thestatesman.com/wp-content/uploads/2022/01/Kathakali-1.jpg"
+            },
+            {
+                "name": "Kerala Mural Painting",
+                "description": "Kerala mural paintings are traditional paintings that adorn the walls of temples and palaces in Kerala. These paintings depict Hindu mythology and legends, showcasing scenes from epics like the Ramayana and Mahabharata, as well as images of gods, goddesses, and celestial beings. Kerala mural artists use natural pigments and follow strict iconographic conventions to create these timeless works of art.",
+                "image": "https://5.imimg.com/data5/SELLER/Default/2023/5/305733394/UX/IB/HM/161250086/kerala-mural-art-paintings-on-canvas.jpg"
+            },
+            {
+                "name": "Thiruvathira Kali Dance",
+                "description": "Thiruvathira Kali is a traditional dance form performed by women in Kerala during the Thiruvathira festival. It involves graceful movements and rhythmic steps, often performed in a circular pattern around a lamp or floral arrangement. The dance celebrates marital fidelity and the divine love of Lord Shiva and Goddess Parvati. Thiruvathira Kali is accompanied by traditional songs and percussion instruments like the chenda and ilathalam.",
+                "image": "https://peppertrail.com/wp-content/uploads/2020/06/tiruvathirakali.jpg"
+            }
+        ]
+    },
+    "Karnataka": {
+        "arts": [
+            {
+                "name": "Yakshagana Performance",
+                "description": "Yakshagana is a traditional theater form of Karnataka, primarily performed in the coastal regions. It combines dance, music, dialogues, and elaborate costumes to narrate stories from Hindu epics like the Ramayana and Mahabharata. Yakshagana performances feature vibrant makeup, elaborate headgear, and stylized movements, captivating audiences with its colorful portrayal of mythological tales.",
+                "image": "https://indiaforyou.in/wp-content/uploads/2017/12/yakshagana-630x315.jpg"
+            },
+            {
+                "name": "Veena Recital",
+                "description": "The Veena is a traditional string instrument of South India, particularly popular in Karnataka. It produces a rich and melodious sound that is soothing to the ears. Veena recitals showcase the instrument's versatility, with musicians presenting classical ragas and compositions with intricate melodies and ornamentation. The Veena holds a special place in Carnatic music concerts and spiritual gatherings.",
+                "image": "https://static.wixstatic.com/media/4bca24_e7eb3f492aae487b864b1d39b31f072d~mv2.jpg/v1/crop/x_241,y_0,w_5278,h_3840/fill/w_536,h_374,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Divya%20VeenaRecital%20-%20132.jpg"
+            },
+            {
+                "name": "Mysore Silk Saree",
+                "description": "Mysore Silk sarees are renowned for their fine silk fabric and intricate Zari work. They are a symbol of elegance and tradition in Karnataka, particularly in Mysore. Mysore Silk sarees are handwoven with pure silk threads and adorned with intricate motifs inspired by local culture and heritage. These sarees are worn on special occasions and festivals, reflecting Karnataka's rich textile heritage.",
+                "image": "https://i0.wp.com/textilelearner.net/wp-content/uploads/2021/06/making-of-mysore-silk-saree.jpg?resize=600%2C400&ssl=1"
+            }
+        ]
+    }
+}

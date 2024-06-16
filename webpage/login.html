@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="india.png">
+</head>
+
+<body>
+    <div class="background-image" style="background-image: url(lsbg2.jpg);">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Login</h2>
+            </div>
+            <form action="process_login.jsp">
+                <label for="Username">Username:</label>
+                <input type="text" pattern="[^0-9]+" id="Username" name="Username" required>
+                <label for="Password">Password:</label>
+                <input type="password" id="Password" name="Password"  required >
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

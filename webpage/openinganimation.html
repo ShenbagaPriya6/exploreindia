@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Journey Through India's Culture</title>
+    <link rel="icon" type="image/x-icon" href="india.png">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; 
+        }
+
+        #container {
+            text-align: center;
+        }
+    </style>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#box").animate({
+                width: "400px"
+            }, {
+                duration: 5000,
+                easing: "linear",
+                step: function (x) {
+                    $("#demo").text(Math.round(x * 100 / 400) + "%");
+                },
+                complete: function () {
+                    window.location.href = "homepage2.html";
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div style="border: 1px solid #000; margin: 10px; width: 400px;">
+            <div id="box" style="background: #bf5321; height: 50px; width: 1px; border: 1px solid #000;"></div>
+        </div>
+        <p id="demo"></p>
+    </div>
+</body>
+
+</html>
+

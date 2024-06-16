@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "image": "slide1.jpg",
+      "title": "Slide 1",
+      "description": "Description for Slide 1",
+      "link": "slide1.html"
+    },
+    {
+      "id": 2,
+      "image": "slide2.jpg",
+      "title": "Slide 2",
+      "description": "Description for Slide 2",
+      "link": "slide2.html"
+    },
+    {
+      "id": 3,
+      "image": "slide3.jpg",
+      "title": "Slide 3",
+      "description": "Description for Slide 3",
+      "link": "slide3.html"
+    }
+  ]
+  

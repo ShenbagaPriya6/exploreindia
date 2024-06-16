@@ -1,0 +1,10 @@
+<states>
+    <state name="Tamil Nadu">
+        <food>Dosa</food>
+        <monument>
+            <name>Brihadeeswarar Temple</name>
+            <description>Brihadeeshwara Temple (Peruvudaiyar Kovil) is a Hindu temple dedicated to Shiva located in Thanjavur in the Indian state of Tamil Nadu...</description>
+        </monument>
+    </state>
+    <!-- More state elements here -->
+</states>

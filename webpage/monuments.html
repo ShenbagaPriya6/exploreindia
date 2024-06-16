@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TAMIL NADU</title>
+    <link rel="icon" type="image/x-icon" href="india.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            text-align: left;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        #recent-events {
+            height: 20vh;
+            background-color: #ddd;
+            padding: 10px;
+            overflow: auto;
+            text-align: left;
+        }
+
+        #monuments-container {
+            display: flex;
+            justify-content: space-between;
+            height: 80vh;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+
+        .monuments-category {
+            width: 30%;
+            background-color: #eee;
+            padding: 10px;
+            text-align: center;
+            margin: 10;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Exploring <span id="state-name"></span>'s Timeless Tapestry: Temples and Monuments</h1>
+    </header>
+
+    <div id="recent-events">
+        <h2>Recent Events</h2>
+        <p>Event 1</p>
+        <p>Event 2</p>
+        <p>Event 3</p>
+    </div>
+    <div id="monuments-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var stateName = getUrlParameter('state');
+            var categoryName = "Monuments";
+            document.title = stateName + " History";
+            document.getElementById('state-name').innerText = stateName;
+            fetchMonumentData(stateName);
+            fetchRecentEvents(stateName, categoryName);
+        });
+
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        function fetchRecentEvents(stateName, categoryName) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'EventsServlet?state=' + stateName + '&category=' + categoryName, true);
+            xhr.onload = function () {
+                if (xhr.status == 200) {
+                    var recentEvents = JSON.parse(xhr.responseText);
+                    displayRecentEvents(recentEvents);
+                }
+            };
+            xhr.send();
+        }
+
+        function displayRecentEvents(recentEvents) {
+            var recentEventsContainer = document.getElementById('recent-events');
+            recentEventsContainer.innerHTML = '<h2>Recent Events</h2>';
+            if (recentEvents.length === 0) {
+                recentEventsContainer.innerHTML += '<p>No events found.</p>';
+            } else {
+                recentEvents.forEach(function (event) {
+                    var eventText = event.eventName + ' - ' + event.description;
+                    var buttonHTML = event.bookingPossibility === 'yes' ? '<button class="book-now-btn" style="background-color:black;color:white;float:right;">Book Now</button>' : '<button class="book-now-btn" style="color:black;float:right;"disabled>Not Available for Booking</button>';
+                    recentEventsContainer.innerHTML += '<p>' + eventText + buttonHTML + '</p>';
+                });
+                var bookNowButtons = document.getElementsByClassName('book-now-btn');
+                Array.from(bookNowButtons).forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        alert('Initiating booking process');
+                    });
+                });
+            }
+        }
+
+        function fetchMonumentData(stateName) {
+            // AJAX request to fetch monument data
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'monuments.json', true);
+            xhr.onload = function () {
+                if (xhr.status == 200) {
+                    var monumentsData = JSON.parse(xhr.responseText)[stateName].monuments;
+                    displayMonuments(monumentsData);
+                }
+            };
+            xhr.send();
+        }
+
+        function displayMonuments(monumentsData) {
+            var monumentsContainer = document.getElementById('monuments-container');
+            monumentsData.forEach(function (monument) {
+                var monumentDiv = document.createElement('div');
+                monumentDiv.classList.add('monuments-category');
+                monumentDiv.innerHTML = '<h2>' + monument.name + '</h2>' +
+                    '<p>' + monument.description + '</p>' +
+                    '<img src="' + monument.image + '" alt="' + monument.name + '">';
+                monumentsContainer.appendChild(monumentDiv);
+            });
+        }
+    </script>
+</body>
+
+</html>

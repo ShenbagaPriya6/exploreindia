@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar Highlighting</title>
+  <style>
+    /* Style for the calendar */
+    #calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+    }
+
+    .day {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .highlighted {
+      background-color: yellow; /* Highlight color */
+    }
+
+    .sunday {
+      background-color: lightblue; /* Red background color for Sundays */
+    }
+  </style>
+  <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+
+  <h2>Calendar</h2>
+
+  <div id="calendar"></div>
+
+  <script>
+    $(document).ready(function() {
+
+      for (let i = 1; i <= 31; i++) {
+        let isSunday = (i % 7 === 0);
+
+        $('#calendar').append('<div class="day' + (isSunday ? ' sunday' : '') + '">' + i + '</div>');
+      }     
+      $('.day').click(function() {
+        $('.day').removeClass('highlighted');
+
+        $(this).addClass('highlighted');
+      });
+    });
+  </script>
+
+</body>
+</html>

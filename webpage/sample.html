@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        .parent {
+            width: 500px; 
+            margin: 0 auto; 
+        }
+        img {
+            width: 100%; 
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="zoom.js"></script>
+    <script>
+        $(window).on('load',function(){
+            $(".parent").css('width',$("img").width());
+            $("img").parent().zoom({
+                magnify:1,
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <div class="parent">
+        <div class="contain">
+            <img src="heritage.jpg" alt="Image">
+        </div>
+    </div>
+</body>
+</html>

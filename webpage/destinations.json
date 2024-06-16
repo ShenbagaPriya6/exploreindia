@@ -1,0 +1,8 @@
+[
+    { "name": "TAJ MAHAL", "imageUrl": "https://www.fabhotels.com/blog/wp-content/uploads/2019/06/Taj-Mahal_600.jpg:cf-webp:w-450:h-240", "link": "https://www.tajmahal.gov.in/" },
+    { "name": "KEDARNATH", "imageUrl": "https://uttarakhandtourism.gov.in/sites/default/files/2020-09/Kedarnath%20Temple.jpg", "link": "https://badrinath-kedarnath.gov.in/AboutUs/shri-kedarnath.aspx" },
+    { "name": "MANALI", "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9x4mvvWpbbYLYVyu-rma5z5Vy7B5pTCuofA&usqp=CAU", "link": "https://himachaltourism.gov.in/destination/manali/" },
+    { "name": "KOCHI", "imageUrl": "https://www.malabardevelopers.com/wp-content/uploads/2022/09/md28.jpg", "link": "https://www.keralatourism.org/kochi/" },
+    { "name": "SIKKIM", "imageUrl": "https://assets.vogue.in/photos/5ce44893ba773d71660b5bfc/1:1/w_1080,h_1080,c_limit/Sikkim.jpg", "link": "https://www.sikkimtourism.gov.in/Public/index" },
+    { "name": "MUMBAI", "imageUrl": "https://media.timeout.com/images/105241451/image.jpg", "link": "https://mumbaicity.gov.in/about-district/" }
+]

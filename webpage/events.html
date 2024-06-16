@@ -1,0 +1,26 @@
+<p ondragstart="dstart(event)" ondrag="dragging(event)" draggable="true" id="para">drag</p>
+<p id="sample" onmouseover="underline(this)" onmouseout="nothing(this)">nice!!!!!!</p>
+<div ondrop="after(event)" ondragover="afterdrop(event)">drop here</div>
+<script>
+    function dstart(event){
+        event.dataTransfer.setData("text",event.target.id);
+    }
+    function dragging(event){
+        document.getElementById("sample").innerHTML="dragging";
+    }
+    function after(event){
+        event.preventDefault();
+        const data=event.dataTransfer.getData("text");
+        event.target.appendChild(document.getElementById(data));
+        document.getElementById("sample").innerHTML="dropped";
+    }
+    function afterdrop(event){
+        event.preventDefault();
+    }
+    function underline(element){
+        element.style.textDecoration="underline";
+    }
+    function nothing(element){
+        element.style.textDecoration="none";
+    }
+</script>
